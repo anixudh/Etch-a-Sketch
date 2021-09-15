@@ -20,6 +20,7 @@ const createNewGrid=(n)=>{
 }
 
 const resetGrid=e=>{
+    rainbowc=0;
     const gridrows=document.querySelectorAll(".gridrow");
     const newSize=prompt("Enter new grid size (max:100)");
     gridrows.forEach(gridRow=>gridbox.removeChild(gridRow));
@@ -29,13 +30,26 @@ const resetGrid=e=>{
 };
 
 const colorGrid=e=>{
+    if(rainbowc==1){
+        e.target.classList.add("rainbowColor");
+        const randomColor = "#"+Math.floor(Math.random()*16777215).toString(16);
+        e.target.style.backgroundColor= randomColor;
+    }
     e.target.classList.add("colorGrid");
 };
 
+const changeRainbow=e=>{
+   rainbowc=1;
+};
+
+let rainbowc=0;
 createNewGrid(16);
 
 const reset=document.querySelector(".reset");
 reset.addEventListener('click',resetGrid);
+
+const rainbow=document.querySelector(".rainbow");
+rainbow.addEventListener('click',changeRainbow);
 
 const grids=document.querySelectorAll(".grid");
 grids.forEach(grid=>grid.addEventListener('mouseenter',colorGrid));

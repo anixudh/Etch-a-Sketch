@@ -17,15 +17,14 @@
 .gridbox{
     display: flex;
     justify-content: center;
-
     /*border: 5px solid aqua;*/
 }
 
- .colorGrid{
+.colorGrid{
     background-color: black;
 }
 
- .footer{
+.footer{
     margin-top: 30px;
     padding: 5px;
     text-align: center;
