@@ -1,13 +1,14 @@
 .header{
-    padding: 50px;
+    padding: 3px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom:3px;
 }
 
 .grid{
     background-color:rgb(226, 221, 221);
-    width: 20px;
-    height: 20px;
+    /*width: 20px;
+    height: 20px; */
     margin: 0;
     padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.082);
@@ -16,6 +17,7 @@
 .gridbox{
     display: flex;
     justify-content: center;
+
     /*border: 5px solid aqua;*/
 }
 
