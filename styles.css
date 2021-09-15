@@ -1,0 +1,25 @@
+.header{
+    padding: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.grid{
+    background-color:rgb(226, 221, 221);
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+}
+
+.gridbox{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    justify-content: center;
+    /*border: 5px solid aqua;*/
+}
+
+ .colorGrid{
+     background-color: black;
+ }
